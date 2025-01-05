@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    margin-top: 0px;
+}
+
+.comprar{
+    background-color: green;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.item{
+    background-color: lightblue;
+    border: 2px solid;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    display: grid;
+}
+
+
+/* Display Grid */
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    #container{
+        grid-template-columns: 1fr;
+    }
+    
+}

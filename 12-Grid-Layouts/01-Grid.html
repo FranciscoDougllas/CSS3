@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Introducao</title>
+
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 10px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .item{
+            background-color: palegreen;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .grid-inline {
+            border: 1px solid black;
+            padding: 10px;
+
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .item2{
+            background-color: palegreen;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <br><br><br>
+    <div class="grid-inline">
+        <div class="item2">items11</div>
+        <div class="item2">items12</div>
+        <div class="item2">items13</div>
+        <div class="item2">items14</div>
+    </div>
+</body>
+</html>

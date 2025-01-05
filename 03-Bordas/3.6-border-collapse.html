@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+
+    <style>
+        * {
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+        div{
+            margin: 10px;
+        }
+        #border-collapse table, tr, td, th{
+            border: 1px solid #333;
+            padding: 10px;
+        }
+        #border-collapse table{
+            width: 90vw;
+            border-collapse: collapse;
+        }
+
+        .border-spacing{
+            border-collapse: separate;
+            border-spacing: 0px;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <main>
+        <p>Border-collapse | border-spacing</p>
+
+        <div id="border-collapse">
+            <p>border-collapse</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome: </th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+
+        <br>
+        <hr style="border: 2px solid;">
+        <div class="border-spacing">
+            <p>border-spacing</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome: </th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>

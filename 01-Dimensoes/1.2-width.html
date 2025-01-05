@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width</title>
+   
+    <style type="text/css">
+        body {
+            margin:50px; 
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .fundo {
+            width: 100vw;
+            height: 100vh;
+        }
+        .fundo > div[class^=largura] {
+            border-style: solid #fff;
+            border-width: 2px;
+            margin-bottom: 2%;
+            height: 40px;
+            overflow: hidden;
+        
+        }
+        div{
+            padding: 15px;
+            color: #000000;
+        }
+
+        .largura-auto {
+            width: auto;
+            background-color: #00598daa;
+        }
+        .largura-vwvh {
+            width: 50vw;
+            background-color: #008d44aa;
+        }
+        .largura-percent {
+            width: 50%;
+            background-color: #EB6767aa;
+        }
+        .largura-pixel {
+            width: 350px;
+            background-color: #c82aaeaa;
+        }
+        .largura-fit {
+            width: fit-content;
+            background-color: #c2f01caa;
+        }
+        .largura-min {
+            width: min-content;
+            background-color: #2ac3c8aa;
+        }
+        .largura-max {
+            width: max-content;
+            background-color: #7c2ac8aa;
+        }
+        .largura-revert {
+            width: revert;
+            background-color: #c82a2aaa;
+        }
+        .largura-unset {
+            width: unset;
+            background-color: #57c82aaa;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="fundo">
+        <div class="largura-auto">AUTO: O valor <b>auto</b> 
+            ajusta a largura automaticamente com base no conteúdo e no contexto do elemento.</div>
+
+        <div class="largura-vwvh">VWVH: O valor <b>vw/vh</b> 
+            define a largura como uma porcentagem da largura/altura da janela de visualização (viewport).</div>
+
+        <div class="largura-percent">PERCENT: O valor <b>percent</b> 
+            define a largura como uma porcentagem da largura do elemento pai.</div>
+
+        <div class="largura-pixel">PIXEL: O valor <b>pixel</b> 
+            define a largura em pixels, uma unidade fixa.</div>
+
+        <div class="largura-fit">FIT: O valor <b>fit-content</b> 
+            ajusta a largura ao tamanho do conteúdo, respeitando os limites definidos.</div>
+
+        <div class="largura-max">MAX: O valor <b>max-content</b> 
+            define a largura como o maior tamanho possível do conteúdo.</div>
+
+        <div class="largura-min">MIN: O valor <b>min-content</b> 
+            define a largura como o menor tamanho possível do conteúdo.</div>
+
+        <div class="largura-revert">REVERT: O valor <b>revert</b> 
+            redefine a largura para o valor padrão do navegador ou do estilo anterior.</div>
+
+        <div class="largura-unset">UNSET: O valor <b>unset</b> 
+            remove qualquer valor definido anteriormente, retornando ao valor inicial ou herdado.</div>
+
+    </div>
+
+</body>
+</html>

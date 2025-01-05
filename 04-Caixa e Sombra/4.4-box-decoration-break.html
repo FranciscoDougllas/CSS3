@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Box-Decoration-Break</title>
+    <style>
+        .texto-slice {
+            width: 200px;
+            padding: 10px;
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            box-decoration-break: slice;
+        }
+
+        .texto-clone {
+            width: 200px;
+            padding: 10px;
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            box-decoration-break: clone;
+        }
+    </style>
+</head>
+<body>
+    <div class="texto-slice">
+        Este é um exemplo de texto que será dividido em várias linhas para demonstrar o comportamento da propriedade box-decoration-break com o valor slice.
+    </div>
+    <br>
+    <div class="texto-clone">
+        Este é um exemplo de texto que será dividido em várias linhas para demonstrar o comportamento da propriedade box-decoration-break com o valor clone.
+    </div>
+</body>
+</html>

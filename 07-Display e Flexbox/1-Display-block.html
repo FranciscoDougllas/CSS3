@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Block</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            max-width: 1250px;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        h2{
+            font-size: 3rem;
+            margin: 20px;
+            background-color: rgb(104, 80, 80);
+            color: #fff;
+            padding: 20px;
+        }
+
+        p{
+            width: 100%;
+            padding: 15px; 
+            margin: 5px;
+            font-size: 1.2rem;
+            background-color: #c8f4b9;
+        }
+        .p{
+            border-radius: 20px;
+            width: 100%;
+            height: 200px;
+            margin: 10px;
+            background-color: #7a93af;
+        }
+        .container{
+            display: block;
+            width: 100%;
+            background-color: rgb(233, 218, 218);
+            padding: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Display Block</h2>
+    <p>O elemento é exibido como um bloco, ocupando toda a largura disponível e começando em uma nova linha.</p>
+
+    <div class="container">
+        <div class="p"></div>
+        <div class="p"></div>
+        <div class="p"></div>
+        <div class="p"></div>
+        <div class="p"></div>
+        <div class="p"></div>
+    </div>
+</body>
+</html>

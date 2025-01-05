@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformações 3D</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            perspective: 200px;
+            perspective-origin: top;
+        }
+        .box, 
+        .box2 {
+            background: linear-gradient(90deg, rgb(74, 71, 71), rgb(222, 222, 228));
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            border-radius: 50px;
+            border: 4px solid #444;
+        }
+        .box:hover {
+            border-radius: 50px;
+            transform: rotateY(360deg) rotateX(360deg);
+            rotate: infinit;
+            transition: 12s;
+        }
+        .box2:hover{
+            border-radius: 50px;
+            transform: scale(2) rotateY(-360deg) rotateX(-360deg);
+            rotate: infinit;
+            transition: 12s;
+        }
+
+        .matrix-3d{
+            background: linear-gradient(90deg, rgb(42, 170, 10), rgb(222, 222, 228));
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            border-radius: 50px;
+            border: 4px solid #444;
+        }
+        .matrix-3d:hover{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div class="box2"></div>
+
+
+    <div class="matrix-3d"></div>
+    <script>
+        // Remova esta parte, pois não é mais necessária
+        // const box = document.querySelector(".box");
+        // const minValue = 0;
+        // const maxValue = 100;
+        // const rangeArray = Array.from({ length: maxValue - minValue + 1 }, (_, index) => index);
+        // box.style.transform.rotateY(rangeArray);
+    </script>
+</body>
+</html>

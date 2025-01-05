@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-color</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        div{
+            margin: 20px;
+            width: 50vw;
+            height: 20vh;
+            border: 2px solid;
+            text-align: center;
+            background-color: rgb(237, 238, 238);
+        }
+
+        .border-top-color{
+            border-style: solid;
+            border-top-width: 5vh;
+            border-top-color: #54608d;
+            padding: 20px;
+        }
+        #border-right-color{
+            border-style: solid;
+            border-right-width: 5vw;
+            border-right-color: #456;
+            padding: 20px;
+        }
+        .border-left-color{
+            border-style: solid;
+            border-left-width: 5vw;
+            border-left-color: rgb(186, 186, 24);
+            padding: 20px;
+        }
+        #border-botton-color{
+            border-style: solid;
+            border-bottom-width: 5vh;
+            border-bottom-color: #456;
+            padding: 20px;
+        }
+        .border-color{
+            border-style: solid;
+            border-width: 40px;
+            border-color: rgb(105, 152, 193);
+            padding: 20px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="border-top-color">
+        <p>border-top-color: Borda no topo</p>
+    </div>
+
+    <div id="border-right-color">
+        <p>border-right-color: Borda na direita</p>
+    </div>
+
+    <div class="border-left-color">
+        <p>border-left-color: Borda na esquerda</p>
+    </div>
+
+    <div id="border-botton-color">
+        <p>border-botton-color: Borda no Fundo</p>
+    </div>
+
+    <div class="border-color">
+        <p>border-color: Borda nos 4 lados</p>
+    </div>
+
+</body>
+</html>

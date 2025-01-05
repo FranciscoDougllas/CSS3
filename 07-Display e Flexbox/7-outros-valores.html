@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Display</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 750px;
+            margin: 0 auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div{
+            margin: 10px;
+            padding: 10px;
+            background-color: rgb(201, 183, 183);
+            font-weight: bold;
+        }
+        .inline-flex {
+            display: inline-flex;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .inline-grid {
+            display: inline-grid;
+            grid-template-columns: auto auto;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .contents {
+            display: contents;
+        }
+        .table {
+            display: table;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .table-row {
+            display: table-row;
+        }
+        .table-cell {
+            display: table-cell;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .list-item {
+            display: list-item;
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .run-in {
+            display: run-in;
+            font-weight: bold;
+        }
+        .flow-root {
+            display: flow-root;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de Display</h1>
+    
+    <div class="inline-flex">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+    
+    <div class="inline-grid">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+    
+    <div class="contents">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+    
+    <div class="table">
+        <div class="table-row">
+            <div class="table-cell">Célula 1</div>
+            <div class="table-cell">Célula 2</div>
+        </div>
+    </div>
+    
+    <ul>
+        <li class="list-item">Item de Lista</li>
+    </ul>
+    
+    <div class="run-in">Run-in</div>
+    <p>Texto após o run-in.</p>
+    
+    <div class="flow-root">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+</body>
+</html>

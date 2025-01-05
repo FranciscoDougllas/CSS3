@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Seletores CSS</title>
+
+  <style>
+    /* Seletor Universal: Aplica estilo a todos os elementos */
+    * {
+        margin: 10px;
+    }
+    
+    /* Seletor de Tag: Aplica estilo a todos os elementos <p> */
+    p {
+        color: blue;
+    }
+    
+    /* Seletor de ID: Aplica estilo ao elemento com o ID "titulo-principal" */
+    #titulo-principal {
+        color: red;
+        font-size: 24px;
+    }
+    
+    /* Seletor de Classe: Aplica estilo a todos os elementos com a classe "caixa" */
+    .caixa {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    
+    /* Seletor de Atributo: Aplica estilo a todos os elementos <a> com o atributo href */
+    a[href] {
+        text-decoration: none;
+        color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <p>Este é um parágrafo. Todos os parágrafos terão a mesma cor.</p>
+
+  <h1 id="titulo-principal">Este é o título principal</h1>
+
+  <div class="caixa">Esta é uma caixa com borda.</div>
+  <p class="caixa">Este parágrafo também está dentro de uma caixa.</p>
+
+  <span>Este texto terá uma margem.</span>
+
+  <a href="https://www.example.com">Este é um link</a>
+
+</body>
+</html>

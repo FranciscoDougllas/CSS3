@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        body{
+            max-width: 1250px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 200vh;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div{
+            width: 50%;
+            border: 1px solid #000;
+            margin: 20px;
+            padding: 10px;
+            
+        }
+        p{
+            border: 2px solid #333;
+            border-radius: 10px;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        #position-static{
+            position: static;
+        }
+
+        /*Position Fixed*/
+        #position-fixed{
+            position: fixed;
+        }
+        #position-stick{
+            position: sticky;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Position</h2>
+    <div id="position-static">
+        <p>Lorem.</p>
+        <p>Consequuntur.</p>
+        <p>Sunt?</p>
+        <p>Molestias.</p>
+    </div>
+
+    <div id="position-fixed">
+        <p>Position Fixed</p>
+    </div>
+
+    <div id="position-stick">
+        <p>Position Stick</p>
+    </div>
+</body>
+</html>

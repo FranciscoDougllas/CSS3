@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo Completo de Seletores CSS</title>
+  <style>
+    /* Agrupamento */
+    h1, h2 {
+      color: blue;
+    }
+
+    /* Descendente */
+    .container p {
+      font-size: 16px;
+    }
+
+    /* Filho Direto */
+    .container > p {
+      color: green;
+    }
+
+    /* Irmão Adjacente */
+    h1 + p {
+      text-align: center;
+    }
+
+    /* Irmão Geral */
+    h1 ~ p {
+      margin-top: 10px;
+    }
+
+    /* Combinando Seletores */
+    .container ul li:first-child {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Título Principal</h1>
+    <p>Este é o primeiro parágrafo.</p>
+    <p>Este é o segundo parágrafo.</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </div>
+
+  <h2>Outro Título</h2>
+
+</body>
+</html>

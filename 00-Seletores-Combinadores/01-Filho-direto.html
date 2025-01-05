@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*Seletor Composto Decendencia*/
+        article a p b{
+            color: red;
+        }
+
+
+        /*Seletor Composto Filho direto*/
+        article > p > a > b{
+            color: blue;
+        }
+
+        a{
+            color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <article>
+        <h3>Filho direto</h3>
+        <p><a href=""><b></b></a></p>
+        <p><a href=""><b></b></a></p>
+        <p><a href=""><b></b></a></p>
+        <p><a href=""><b></b></a></p>
+    </article>
+</body>
+</html>

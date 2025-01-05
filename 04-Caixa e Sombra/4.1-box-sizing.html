@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Box-Sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+        }
+        div{
+            width: 400px;
+            height: 150px;
+            margin: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            border: 1px solid;
+            padding: 10px;
+        }
+        /* Comportamento padrão */
+        .elemento {
+            padding: 10px;
+            box-sizing: content-box; /* Este é o padrão */
+            background-color: lightblue;
+        }
+
+        /* Usando border-box */
+        .elemento-border-box {
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-sizing"><p>Define como a largura e altura do elemento são calculadas (incluindo padding e borda ou não). Valores: content-box (padrão), border-box.</p></div>
+    <div class="elemento">
+        <b>Content Box</b>
+    </div>
+    <div class="elemento-border-box">Border Box</div>
+</body>
+</html>
