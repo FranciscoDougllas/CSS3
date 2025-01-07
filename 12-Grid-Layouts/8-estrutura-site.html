@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .container{
+            background-color: #cccc;
+            padding: 10px;
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+                "header header header"
+                "menu conteudo conteudo"
+                "menu rodape rodape"
+                "anuncio anuncio anuncio";
+        }
+        .item{
+            background-color: #444;
+            color: #fff;
+            font-size: 2rem;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        header{
+            grid-area: header;
+        }
+        nav{
+            grid-area: menu;
+        }
+        section{
+            grid-area: conteudo;
+        }
+        footer{
+            grid-area: rodape;
+        }
+        .add{
+            grid-area: anuncio;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="item">Cabecalho</header>
+        <nav class="item">Menu</nav>
+        <section class="item">Conteudo</section>
+        <footer class="item">Rodape</footer>
+
+        <div class="item add">Anuncio</div>
+    </div>
+</body>
+</html>
