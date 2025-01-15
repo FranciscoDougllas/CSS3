@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+
+    <style>
+        .contain{
+            display: flex;
+            border: 2px solid;
+            padding: 20px;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            font-family: 'Courier New', Courier;
+            flex-wrap: wrap;
+        }
+
+        .item1{
+            flex: 1;
+            min-width: 100px;
+            border: 1px solid;
+            padding: 30px;
+        }
+
+        .item2{
+            flex: 2;
+            min-width: 300px;
+            border: 1px solid;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="item1">Pequeno</div>
+        <div class="item2">Maior</div>
+    </div>
+</body>
+</html>
